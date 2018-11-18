@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="D-365"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/floatingActionMenu"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="16dp"
+        app:menu_backgroundColor="@android:color/transparent"
+        app:menu_fab_label=""
+        app:menu_openDirection="up"
+        app:menu_showShadow="true" >
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/floatingActionList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_label=""
+            app:fab_size="mini"
+            android:src="@drawable/ic_list_24dp"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/floatingActionAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_label=""
+            app:fab_size="mini"
+            android:src="@drawable/ic_add_24dp"/>
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+</RelativeLayout>
